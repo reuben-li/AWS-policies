@@ -37,7 +37,8 @@
 
 Delegate access to “remote” (other accounts’) user or role:
 
-```{
+```
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -90,4 +91,5 @@ On the other AWS account, you also need to set policy to allow actions on the pa
             ]
         }
     ]
-}```
+}
+```
