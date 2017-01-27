@@ -64,7 +64,9 @@ Delegate access to “remote” (other accounts’) user or role:
 ```
 
 On the other AWS account, you also need to set policy to allow actions on the particular S3 bucket
-```{
+
+```
+{
     "Version": "2012-10-17",
     "Statement": [
         {
