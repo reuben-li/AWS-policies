@@ -35,7 +35,7 @@
 
 # Allowing role/user in another AWS account to access S3 bucket
 
-Delegate access to “remote” (other accounts’) user or role:
+Delegate access to "remote" (other accounts') user or role:
 
 ```
 {
@@ -63,7 +63,7 @@ Delegate access to “remote” (other accounts’) user or role:
 }
 ```
 
-On the other AWS account, you also need to set policy to allow actions on the particular S3 bucket
+On the other AWS account (data producer), you also need to set policy to allow actions on the particular S3 bucket
 
 ```
 {
@@ -95,3 +95,7 @@ On the other AWS account, you also need to set policy to allow actions on the pa
     ]
 }
 ```
+Do not forget to grant access to receiving account using something like:
+`--grants full=id=[canonical_id]`
+
+Read more about grants here: http://docs.aws.amazon.com/cli/latest/userguide/using-s3-commands.html
